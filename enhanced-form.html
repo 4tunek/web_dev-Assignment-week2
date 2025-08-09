@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fortune Obidimalor">
+  <title>Enhanced-form</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+        <p>Hi, I'm Fortune Obidimalor</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Top 3 Projects</h2>
+        <ol>
+            <li>Personal Portfolio Website</li>
+            <li>Weather App</li>
+            <li>Task Manager</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Project Overview Table</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Project Name</th>
+                <th>Technology Used</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Portfolio Website</td>
+                <td>HTML, CSS, JavaScript</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Weather App</td>
+                <td>React, API</td>
+                <td>Ongoing</td>
+            </tr>
+            <tr>
+                <td>Task Manager</td>
+                <td>Python, Flask</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </section>
+
+      <section>
+        <h2>Gallery</h2>
+        <img src="images/jose-rago-Q2MBexaokrQ-unsplash.jpg" alt="My Photo" width="200">
+        <br/><br/>
+        <video controls width="300">
+            <source src="intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h1>Registration Form</h1>
+    <form action="" method="post" autocomplete="on">
+        <!-- Text input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Email input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" autocomplete="new-password"    title="Password must be at least 6 characters long" required>
+        <br><br>
+
+        <!-- Read-only field -->
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" name="userid" value="USER-12345" readonly>
+        <br><br>
+
+        <!-- Number input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120">
+        <br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <p>Skills:</p>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="nig">Nigeria</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+        <br><br>
+
+        <!-- File upload -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Bio:</label>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fortune Obidimalor</p>
+    </footer>
+</body>
+</html>
